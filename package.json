@@ -1,6 +1,6 @@
 {
   "name": "react-use-passive-reducer",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A react hook similar to useReducer without the state updates",
   "main": "dist/react-use-passive-reducer.js",
   "module": "dist/react-use-passive-reducer.ejs",
