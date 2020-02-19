@@ -1,0 +1,50 @@
+{
+  "name": "react-use-passive-reducer",
+  "version": "0.1.0",
+  "description": "A react hook similar to useReducer without the state updates",
+  "main": "dist/react-use-passive-reducer.js",
+  "module": "dist/react-use-passive-reducer.ejs",
+  "types": "dist/types/index.d.ts",
+  "repository": "github.com/benox3/react-use-passive-reducer",
+  "author": "Ben Budnevich",
+  "license": "MIT",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "dist/"
+  ],
+  "scripts": {
+    "build": "yarn clean && yarn rollup -c rollup.config.js",
+    "clean": "rm -rf dist",
+    "lint": "eslint './src/**/*.{ts,tsx}'",
+    "lint:fix": "eslint --fix",
+    "prebuild": "yarn lint",
+    "prepublish": "yarn build",
+    "release": "standard-version && yarn publish --non-interactive"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.3.4",
+    "@commitlint/config-conventional": "^8.3.4",
+    "@types/react": "^16.9.19",
+    "@typescript-eslint/eslint-plugin": "^2.19.2",
+    "@typescript-eslint/parser": "^2.19.2",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-config-react-app": "^5.2.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-simple-import-sort": "^5.0.1",
+    "husky": "^4.0.6",
+    "lint-staged": "^9.5.0",
+    "prettier": "^1.19.1",
+    "react": "^16.12.0",
+    "rollup": "^1.31.1",
+    "rollup-plugin-typescript2": "^0.20.1",
+    "standard-version": "^7.1.0",
+    "typescript": "^3.4.5"
+  },
+  "peerDependencies": {
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4"
+  }
+}

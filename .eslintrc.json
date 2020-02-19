@@ -1,0 +1,22 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint",
+    "eslint-plugin-simple-import-sort",
+    "prettier"
+  ],
+  "rules": {
+    "@typescript-eslint/consistent-type-definitions": ["error", "interface"],
+    "@typescript-eslint/no-explicit-any": [0],
+    "prettier/prettier": "error",
+    "simple-import-sort/sort": "error"
+  },
+  "globals": {
+    "process": true
+  }
+}
