@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "description": "A react hook similar to useReducer without the state updates",
   "main": "dist/react-use-passive-reducer.js",
-  "module": "dist/react-use-passive-reducer.ejs",
   "types": "dist/types/index.d.ts",
   "repository": "github.com/benox3/react-use-passive-reducer",
   "author": "Ben Budnevich",
